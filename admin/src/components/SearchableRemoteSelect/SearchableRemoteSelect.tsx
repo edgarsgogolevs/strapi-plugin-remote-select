@@ -123,7 +123,10 @@ export default function SearchableRemoteSelect(attrs: any) {
   function handleTextValueChange(val: string): void {
     setSearchModel(val);
     if (valueParsed && isSingleParsed(valueParsed) && valueParsed.label !== val) {
-      handleChange(undefined);
+      // NOTE: this allows to save any value not just selected from options
+      // so this behavior is more traditional autofill
+      const dummyVal = JSON.stringify({value: new Date().toTimeString(), label: val});
+      handleChange(dummyVal);
     }
 
     loadOptionsDebounced(val);
