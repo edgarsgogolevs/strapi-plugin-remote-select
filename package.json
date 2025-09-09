@@ -37,8 +37,8 @@
     "test:ts:back": "run -T tsc -p server/tsconfig.json"
   },
   "dependencies": {
-    "@strapi/design-system": "^2.0.0-rc.12",
-    "@strapi/icons": "^2.0.0-rc.12",
+    "@strapi/design-system": "^2.0.0-rc.23",
+    "@strapi/icons": "^2.0.0-rc.23",
     "react-intl": "^6.8.4",
     "jsonpath": "^1.1.1",
     "lodash-es": "^4.17.21"
