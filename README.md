@@ -1,7 +1,9 @@
-# Fork
+## Fork
 
 This is a fork of [strapi-plugin-remote-select](https://github.com/dmitriy-nz/strapi-plugin-remote-select) with some minor fixes
 and slight behavior changes to accomodate my needs.
+
+## Original readme
 
 ![Remote select](https://github.com/dmitriy-nz/strapi-plugin-remote-select/raw/main/logo.svg)
 
