@@ -18,7 +18,7 @@ export const OptionsProxyService = ({ strapi }: { strapi: Core.Strapi }) => ({
     const res = await fetch(this.replaceVariables(config.fetch.url), {
       method: config.fetch.method,
       headers: this.parseStringHeaders(config.fetch.headers),
-      body: config.fetch.body ? this.replaceVariables(config.fetch.body) : null,
+      body: config.fetch.body ? this.replaceVariables(config.fetch.body) : undefined,
     });
 
     const response = await res.json();
